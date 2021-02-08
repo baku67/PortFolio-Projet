@@ -1,0 +1,170 @@
+h1 
+{
+	color: #f39610;
+	font-family: "Arial Black";
+	font-size: 50px;
+	margin-left: 35px;
+	padding-top: 50px;
+	text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+
+h2
+{
+	color: #2d32a0;
+	text-decoration: underline;
+}
+
+
+.NavBarre h3 {
+	position: relative;
+	left: 18em;
+	font-size: 35px;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 70px;
+	text-decoration: underline #f39610;
+	color: #141333;
+}
+
+.NavBarre li {
+	position: relative;
+	top: 20px;
+	display: inline;
+	width: 100%;
+}
+#onglets {
+	background-color: #f39610;
+	padding-bottom: 40px;
+}
+.NavBarre #onglets h4 {
+	display: inline;
+}
+.NavBarre #onglets a {
+	text-decoration: none;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	color: #141333;
+	text-align: center;
+	padding: 21px 50px 16px 50px;
+	margin: 0px 50px 0px 50px;
+	border-bottom: 5px solid #141333;
+	border-radius: 1px;
+}
+.NavBarre #onglets a:hover {
+	color: #D8D8D8;
+	text-decoration: none #f39610;
+	background-color: #141333;
+	border-bottom: 5px solid #D8D8D8;
+	border-radius: 1px;
+}
+.NavBarre #onglets a:active {
+
+}
+
+
+
+
+
+
+.bandeau
+{
+	position: relative;
+	bottom: 33.5px;
+	height: 350px;
+	background-image: url("fond_bleu.jpg");
+}
+
+.photoID
+{
+	height: 120px;
+}
+
+img
+{
+	position: relative;
+	left: 1000px;
+	top: 0px;
+	width: 170px;
+	height: 190px;
+	border: 4px solid rgba(255,255,255,1);
+	border-radius: 5px;
+}
+
+img:hover{
+	border: 4px solid rgba(255,255,255,0.2);
+}
+
+.body
+{
+	width: 900px;
+}
+
+
+.latéral
+{
+	background-image: url("fond_orange.jpg");
+	opacity: 1;
+	flex: 1;
+}
+
+#parent
+{
+	display: flex;
+}
+
+#contenu_bandeau
+{
+	position: relative;
+	top: 100px;
+	left: 30px;
+}
+
+p, li
+{
+	font-family: Arial;
+}
+
+em
+{
+	opacity: 0.65;
+}
+
+strong
+{
+	color: #f39610;
+}
+
+.contact
+{
+	color: black;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.contact2
+{
+	color: black;
+}
+
+body
+{
+	background-color: #f1ebe3;
+}
+
+.trait
+{
+	position: relative;
+	width : 800px;
+	height: 2px;
+	background-color: #f39610;
+}
+
+.body a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #2d32a0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #f39610;
+}
