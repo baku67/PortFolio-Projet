@@ -1,3 +1,106 @@
+/*
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;}
+*/
+
+body { 
+            animation: fadeInAnimation ease 1s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+#onglets {
+            animation: fadeInAnimation ease 2s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+p, li {
+            animation: fadeInAnimation ease 5s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }	
+		
+h4,h2,h1 {
+            animation: fadeInAnimation ease 2s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }
+h5 {
+            animation: fadeInAnimation ease 4s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }	
+h3 {
+            animation: fadeInAnimation ease 4s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }	
+#arrow {
+            animation: arrowanim ease 1.5s; 
+            animation-iteration-count: 500; 
+            animation-fill-mode: forwards; 
+			animation-direction: alternate-reverse;
+        } 
+        @keyframes arrowanim { 
+            0% { 
+                opacity: 1; 
+            } 
+            100% { 
+                opacity: 0; 
+            } 
+        }		
+		
+		
 h1 
 {
 	color: #f39610;
@@ -125,6 +228,7 @@ h2
 	margin: 0px 50px 0px 50px;
 	border-bottom: 5px solid #141333;
 	border-radius: 1px;
+	transition: 0.5s;
 }
 .NavBarre #onglets a:hover {
 	color: #D8D8D8;
@@ -311,19 +415,26 @@ a:hover {
 	font-weight: bold;
 	list-style-type: none;
 	text-decoration: none;
-	text-shadow: 0 0 1.5px black;
+	//text-shadow: 0 0 1px black;
+	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
+	animation: fadeInAnimation ease 7s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
 
 
 .listContact li a {
 	text-decoration: none;
 	color: white;
-}
+	transition: 0.5s;
+} 
+      
 .listContact li a:hover {
 	color: #f39610;
 }
 .listContact li span {
-	color: GoldenRod;
+	text-shadow: -1px 0 rgba(0,0,0,0.4), 0 1px rgba(0,0,0,0.4), 1px 0 rgba(0,0,0,0.4), 0 -1px rgba(0,0,0,0.4);
+	color: #74afa9;
 }
 
 .BTS {
@@ -452,3 +563,8 @@ h4 {
 		text-shadow: none;
 		text-decoration: underline;
 }
+
+
+
+
+
