@@ -3,21 +3,58 @@ h1
 	color: #f39610;
 	font-family: "Arial Black";
 	font-size: 50px;
-	margin-left: 35px;
 	padding-top: 50px;
 	text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.bandeau h1 {
+	margin-left: 35px;
 }
 
 h2
 {
-	color: #2d32a0;
+	color: #141333;
 	text-decoration: underline;
+	text-shadow: 0 0 2px white;
+}
+
+.body h2, p  {
+	margin-left: 1em;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+.presentBody {
+	//background-image: url("background44.jpg");
+	height: 90em;
+	display: block;
+	position: relative;
+}
+
+.presentBody::after {
+	content: "";
+	background: url("background44.jpg");
+	opacity: 0.15;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background-size: cover;   
+}
+
+.body li, p {
+	width: 60%
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 
 .NavBarre h3 {
 	position: relative;
-	left: 18em;
+	text-align: right;
+	right: 2em;
 	font-size: 35px;
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: 50px;
@@ -28,17 +65,31 @@ h2
 
 .NavBarre li {
 	position: relative;
-	top: 20px;
+	top: 1.25em;
 	display: inline;
-	width: 100%;
 }
+
 #onglets {
 	background-color: #f39610;
 	padding-bottom: 40px;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-left: 10em;
+    	padding-right: 10em;
 }
+
+#onglets {
+	justify-content: space-between;
+	display: flex;
+	word-wrap: break-word;
+}
+
 .NavBarre #onglets h4 {
 	display: inline;
+	letter-spacing: 1px;
+	//font-size: 20px;
 }
+
 .NavBarre #onglets a {
 	text-decoration: none;
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
@@ -57,10 +108,15 @@ h2
 	border-radius: 1px;
 }
 .NavBarre #onglets a:active {
-
 }
 
-
+.NavBarre #onglets a.active {
+	color: #D8D8D8;
+	text-decoration: none #f39610;
+	background-color: rgba(20,19,51,1);
+	border-bottom: 5px solid #D8D8D8;
+	border-radius: 1px;
+}
 
 
 
@@ -68,8 +124,7 @@ h2
 .bandeau
 {
 	position: relative;
-	bottom: 33.5px;
-	height: 350px;
+	height: 21.875em;
 	background-image: url("fond_bleu.jpg");
 }
 
@@ -81,8 +136,7 @@ h2
 img
 {
 	position: relative;
-	left: 1000px;
-	top: 0px;
+	left: 85%;
 	width: 170px;
 	height: 190px;
 	border: 4px solid rgba(255,255,255,1);
@@ -95,7 +149,9 @@ img:hover{
 
 .body
 {
-	width: 900px;
+	width: 80%;
+	background-image: url("background33.jpg");
+	opacity: 1;
 }
 
 
@@ -104,6 +160,7 @@ img:hover{
 	background-image: url("fond_orange.jpg");
 	opacity: 1;
 	flex: 1;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 #parent
@@ -114,13 +171,15 @@ img:hover{
 #contenu_bandeau
 {
 	position: relative;
-	top: 100px;
-	left: 30px;
+	top: 6.25em;
+	//right: 1.5em;
+	left: 0.5em;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 p, li
 {
-	font-family: Arial;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 em
@@ -148,12 +207,13 @@ strong
 body
 {
 	background-color: #f1ebe3;
+	margin: 0px;
 }
 
 .trait
 {
 	position: relative;
-	width : 800px;
+	width : 80%;
 	height: 2px;
 	background-color: #f39610;
 }
@@ -167,4 +227,164 @@ body
 a:hover {
 	text-decoration: underline;
 	color: #f39610;
+}
+
+.tbody {
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-color: rgba(20,19,51,0.8);
+	height: 75em;
+	background-size: cover;
+}
+
+.tbody h1 {
+    color: #f39610;
+    font-family: "Arial Black";
+    font-size: 3.125em;
+    padding-top: 1.5em;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: relative;
+}
+
+.PageTitle {
+}
+
+.listContact {
+	margin: 4em;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	right: 2em;
+}
+
+#blurred-box {
+	position: relative;
+	width: 500px;
+	height: 800px;
+	margin: 0 auto;
+	background: inherit;
+	border-radius: 2px;
+	backdrop-filter: blur(4px);
+	background: rgb(34,193,195);
+	background: -moz-linear-gradient(0deg, rgba(34,193,195,0.04) 56%, rgba(253,187,45,0.6) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(34,193,195,0.08) 56%, rgba(253,187,45,0.6) 100%);
+	background: linear-gradient(0deg, rgba(34,193,195,0.08) 56%, rgba(253,187,45,0.6) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+}
+
+
+
+.listContact li {
+	font-size: 30px;
+	font-family: "Arial-black";
+	padding-top: 50px;
+	color: white;
+	font-weight: bold;
+	list-style-type: none;
+	text-decoration: none;
+	text-shadow: 0 0 1.5px black;
+}
+
+
+.listContact li a {
+	text-decoration: none;
+	color: white;
+}
+.listContact li a:hover {
+	color: #f39610;
+}
+.listContact li span {
+	color: GoldenRod;
+}
+
+.BTS {
+	width: 50%;
+	float: left;
+	padding-left: 5em;
+	padding-top: 5em;
+}
+.BTS li, .Alternance li {
+	list-style-type: none; 
+	padding: 0.7em;
+	font-family: Optima, sans-serif;
+	font-size: 30px;
+	text-shadow: 0 0 1px white;
+	letter-spacing: 0.3px;
+}
+
+#trait2 {
+	color: #f39610;
+	font-size: 35px;
+	font-weight: 900;
+}
+
+.Alternance {
+	width: 100%;
+	padding-left: 5em;
+	padding-top: 5em;
+	position: relative;
+	right: 3em;
+}
+
+.ListMatieres {
+	position: relative;
+	left: 2em;
+	top: 5em;
+}
+
+h4 span {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	color: rgba(20,19,51,1);
+	text-decoration: underline #f39610;
+}
+.BTS h4, .Alternance h4 {
+	font-size: 55px;
+	text-shadow: 0 0 1px white;
+	font-family: Optima, sans-serif;
+}
+.Alternance h5, .BTS h5 {
+	font-size: 25px;
+	margin-block-start: 0em;
+        margin-block-end: 0em;
+	font-family: Optima, sans-serif;
+	letter-spacing: 1px;
+}
+
+.Alternance h5 span, .BTS h5 span {
+	font-family: Andale Mono, monospace;
+	font-size: 40px;
+	color: #f39610;
+	text-shadow: 0 0 1px rgba(20,19,51,1);
+	font-weight: bolder;
+}
+
+#arrow {
+	font-family: Andale Mono, monospace;
+	font-size: 80px;
+	color: #f39610;
+	text-shadow: 0 0 2px rgba(20,19,51,1);
+	font-weight: bold;
+	position: relative;
+	left: 2.6em;
+	top: 0.5em;
+}
+.Alternance h5 span {
+	font-family: Andale Mono, monospace;
+	font-size: 80px;
+	color: #f39610;
+	text-shadow: 0 0 2px rgba(20,19,51,1);
+	font-weight: bold;
+	position: relative;
+	left: 2em;
+	top: 0.5em;
+}
+
+h4 {
+	margin-bottom: 0.5em;
 }
