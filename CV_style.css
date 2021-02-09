@@ -26,7 +26,6 @@ h2
 }
 
 .presentBody {
-	//background-image: url("background44.jpg");
 	height: 90em;
 	display: block;
 	position: relative;
@@ -45,9 +44,36 @@ h2
 	background-size: cover;   
 }
 
+#parent .body li, #parent .body p {
+	width: 60%;
+}
+
+
+.Projet_body {
+	height: 100em;
+	display: block;
+	position: relative;
+	bottom: 1em;
+}
+.Projet_body::after {
+	background-image: url("background55.png");
+	background-color: rgba(90,32,234,255);
+	content: "";
+	opacity: 0.35;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .body li, p {
 	width: 60%
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	list-style-type: none;
 }
 
 
@@ -58,7 +84,7 @@ h2
 	font-size: 35px;
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: 50px;
-	line-height: 70px;
+	line-height: 3.1em;
 	text-decoration: underline #f39610;
 	color: #141333;
 }
@@ -95,7 +121,7 @@ h2
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	color: #141333;
 	text-align: center;
-	padding: 21px 50px 16px 50px;
+	padding: 20px 50px 16px 50px;
 	margin: 0px 50px 0px 50px;
 	border-bottom: 5px solid #141333;
 	border-radius: 1px;
@@ -368,7 +394,7 @@ h4 span {
 	font-family: Andale Mono, monospace;
 	font-size: 80px;
 	color: #f39610;
-	text-shadow: 0 0 2px rgba(20,19,51,1);
+	text-shadow: -1px 0 #141333, 0 1px #141333, 1px 0 #141333, 0 -1px #141333;
 	font-weight: bold;
 	position: relative;
 	left: 2.6em;
@@ -387,4 +413,42 @@ h4 span {
 
 h4 {
 	margin-bottom: 0.5em;
+}
+
+.Projet_body h4 {
+	margin: 0;
+	padding: 2.5em 0em;
+	text-align: center;
+	font-size: 55px;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: rgba(20,19,51,1);
+    text-decoration: underline #f39610;
+}
+
+.Projet_body ul {
+		list-style-type: none;
+		text-align: center;
+		position: relative;
+		right: 0em;
+		padding-top: 13em;
+}
+
+.Projet_body li {
+		padding: 1.5em 0;
+}
+
+.Projet_body li {
+	font-size: 18px;
+	color: #d8d8d8;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.Projet_body li span {
+		font-size: 25px;
+		font-weight: bold;
+		color: black;
+		text-shadow: none;
+		text-decoration: underline;
 }
